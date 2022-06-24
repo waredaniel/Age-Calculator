@@ -8,4 +8,13 @@ export class PersonAge {
     this.lifeEarth = lifeEarth;
     this.earthRemaining = lifeEarth - earthAge;
   }
-}
+  earthOver() {
+    if (this.earthRemaining > 0){
+      return "--"
+    }
+    else {
+        this.earthOverage = Math.abs(this.earthRemaining);
+        return this.earthOverage;
+      }
+    }
+  }
