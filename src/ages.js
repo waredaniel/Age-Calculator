@@ -53,4 +53,13 @@ export class PersonAge {
           return this.marsOverage;
         }
     }
+    jupiterOver() {
+      if (this.jupiterRemaining > 0){
+        return "--"
+      }
+      else {
+          this.jupiterOverage = Math.abs(this.jupiterRemaining);
+          return this.jupiterOverage;
+        }
+    }
   }
