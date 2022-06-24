@@ -30,4 +30,13 @@ export class PersonAge {
           return this.mercuryOverage;
         }
     }
+    venusOver() {
+      if (this.venusRemaining > 0){
+        return "--"
+      }
+      else {
+          this.venusOverage = Math.abs(this.venusRemaining);
+          return this.venusOverage;
+        }
+    }
   }
