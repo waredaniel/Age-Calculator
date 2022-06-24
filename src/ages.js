@@ -9,6 +9,8 @@ export class PersonAge {
     this.earthRemaining = lifeEarth - earthAge;
     this.lifeMercury = Math.round(lifeEarth/ 0.24);
     this.mercuryRemaining = this.lifeMercury - this.mercuryAge;
+    this.lifeVenus = Math.round(lifeEarth/ 0.62);
+    this.venusRemaining = this.lifeVenus - this.venusAge;
   }
   earthOver() {
     if (this.earthRemaining > 0){
