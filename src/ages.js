@@ -19,4 +19,13 @@ export class PersonAge {
         return this.earthOverage;
       }
     }
+    mercuryOver() {
+      if (this.mercuryRemaining > 0){
+        return "--"
+      }
+      else {
+          this.mercuryOverage = Math.abs(this.mercuryRemaining);
+          return this.mercuryOverage;
+        }
+    }
   }
