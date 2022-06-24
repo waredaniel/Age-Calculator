@@ -26,4 +26,7 @@ describe('PersonAge', () => {
   test('should return a Person objects remaining years on Earth', () => {
     expect(person.earthRemaining).toEqual(44);
   });
+  test('should return the number of years over life expectancy on earth', () => {
+    expect(person.earthOver).toEqual("--");
+  });
 })
