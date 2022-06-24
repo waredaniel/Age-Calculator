@@ -32,4 +32,7 @@ describe('PersonAge', () => {
   test('should return a Person objects remaining years on Mercury', () => {
     expect(person.mercuryRemaining).toEqual(183);
   });
+  test('should return the number of years over life expectancy on earth', () => {
+    expect(person.mercuryOver()).toEqual('--');
+  });
 })
