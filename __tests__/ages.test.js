@@ -1,4 +1,3 @@
-import test from 'node:test';
 import { PersonAge } from './../src/ages';
 
 describe('PersonAge', () => {
