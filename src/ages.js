@@ -6,5 +6,6 @@ export class PersonAge {
     this.marsAge = Math.round(this.earthAge/ 1.88);
     this.jupiterAge = Math.round(this.earthAge/ 11.86);
     this.lifeEarth = lifeEarth;
+    this.earthRemaining = lifeEarth - earthAge;
   }
 }
