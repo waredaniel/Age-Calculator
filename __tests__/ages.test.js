@@ -1,3 +1,4 @@
+import test from 'node:test';
 import { PersonAge } from './../src/ages';
 
 describe('PersonAge', () => {
@@ -8,6 +9,9 @@ describe('PersonAge', () => {
 
   test('should create a Person object with earth age property', ()=> {
     expect(person.earthAge).toEqual(35);
-  }
+  });
 
-)});
+  test('should return a Person objects age on Mercury', ()=> {
+    expect(person.mercuryAge).toEqual(145);
+ });
+})
