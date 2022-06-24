@@ -38,6 +38,10 @@ describe('PersonAge', () => {
     expect(person.mercuryOver()).toEqual('--');
   });
   test('should return a Person objects remaining years on Venus', () => {
-    expect(person.venusRemaining).toEqual(127);
+    expect(person.venusRemaining).toEqual(71);
   });
+  test('should return the number of years over life expectancy on Venus', () => {
+    expect(person.venusOver()).toEqual('--');
+  });
+
 })
