@@ -27,12 +27,17 @@ describe('PersonAge', () => {
     expect(person.earthRemaining).toEqual(44);
   });
   test('should return the number of years over life expectancy on earth', () => {
+    let person2 = new PersonAge (90, 71);
     expect(person.earthOver()).toEqual('--');
+    expect(person2.earthOver()).toEqual(19);
   });
   test('should return a Person objects remaining years on Mercury', () => {
     expect(person.mercuryRemaining).toEqual(183);
   });
-  test('should return the number of years over life expectancy on earth', () => {
+  test('should return the number of years over life expectancy on Mercury', () => {
     expect(person.mercuryOver()).toEqual('--');
+  });
+  test('should return a Person objects remaining years on Venus', () => {
+    expect(person.venusRemaining).toEqual(127);
   });
 })
