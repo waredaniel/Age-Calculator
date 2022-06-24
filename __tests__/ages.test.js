@@ -1,8 +1,13 @@
-import Ages from '../src/index.js';
+import { PersonAge } from './../src/ages';
 
-describe ('Ages'), () => {
-  test('should create a subject object with earth age property', ()=> {
-    expect(person.earthage).toEqual(35);
+describe('PersonAge', () => {
+  let person;
+  beforeEach(() => {
+    person = new PersonAge(35);
+  });
+
+  test('should create a Person object with earth age property', ()=> {
+    expect(person.earthAge).toEqual(35);
   }
 
-)};
+)});
