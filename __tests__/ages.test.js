@@ -12,6 +12,9 @@ describe('PersonAge', () => {
   });
 
   test('should return a Person objects age on Mercury', ()=> {
-    expect(person.mercuryAge).toEqual(145);
+    expect(person.mercuryAge).toEqual(146);
  });
+  test('should return a Person objects age on Mars'), ()=> {
+    expect(person.venusAge).toEqual(56);
+  }
 })
