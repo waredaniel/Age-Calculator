@@ -52,4 +52,7 @@ describe('PersonAge', () => {
   test('should return a Person objects remaining years on Jupiter', () => {
     expect(person.jupiterRemaining).toEqual(4);
   });
+  test('should return the number of years over life expectancy on Jupiter', () => {
+    expect(person.jupiterOver()).toEqual('--');
+  });
 })
