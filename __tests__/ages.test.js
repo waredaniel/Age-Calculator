@@ -47,6 +47,9 @@ describe('PersonAge', () => {
     expect(person.marsRemaining).toEqual(23);
   });
   test('should return the number of years over life expectancy on Mars', () => {
-    expect(person.venusOver()).toEqual('--');
+    expect(person.marsOver()).toEqual('--');
+  });
+  test('should return a Person objects remaining years on Jupiter', () => {
+    expect(person.jupiterRemaining).toEqual(4);
   });
 })
