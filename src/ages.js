@@ -41,4 +41,13 @@ export class PersonAge {
           return this.venusOverage;
         }
     }
+    marsOver() {
+      if (this.marsRemaining > 0){
+        return "--"
+      }
+      else {
+          this.marsOverage = Math.abs(this.marsRemaining);
+          return this.marsOverage;
+        }
+    }
   }
