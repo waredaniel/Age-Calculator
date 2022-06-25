@@ -45,12 +45,12 @@ export class PersonAge {
         }
     }
     marsOver() {
-      if (this.marsRemaining > 0){
+      if (this.marsRemaining >= 0){
         return "--"
       }
-      else {
-          this.marsOverage = Math.abs(this.marsRemaining);
-          return this.marsOverage;
+      else if (this.marsRemaining < 0) {
+        this.marsOverage = Math.abs(this.marsRemaining);
+        return this.marsOverage;
         }
     }
     jupiterOver() {

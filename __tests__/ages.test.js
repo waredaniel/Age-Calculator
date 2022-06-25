@@ -51,11 +51,13 @@ describe('PersonAge', () => {
   });
   test('should return the number of years over life expectancy on Mars', () => {
     expect(person.marsOver()).toEqual('--');
+    expect(person2.marsOver()).toEqual(6);
   });
   test('should return a Person objects remaining years on Jupiter', () => {
     expect(person.jupiterRemaining).toEqual(4);
   });
   test('should return the number of years over life expectancy on Jupiter', () => {
     expect(person.jupiterOver()).toEqual('--');
+    expect(person2.jupiterOver()).toEqual(1);
   });
 })
