@@ -30,7 +30,7 @@ This calculator can take an inputted age and life expectancy and calculate the c
 
 ## Known Bugs
 
-* Testing logic complete for secondary answers on 
+* None
 
 ## License
 
