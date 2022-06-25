@@ -17,31 +17,31 @@ export class PersonAge {
     this.jupiterRemaining = this.lifeJupiter - this.jupiterAge;
 
   }
-  earthOver() {
-    if (this.earthRemaining > 0){
+    earthOver() {
+    if (this.earthRemaining >= 0){
       return "--"
     }
-    else {
+    else if (this.earthRemaining < 0) {
         this.earthOverage = Math.abs(this.earthRemaining);
         return this.earthOverage;
       }
     }
     mercuryOver() {
-      if (this.mercuryRemaining > 0){
+      if (this.mercuryRemaining >= 0){
         return "--"
       }
-      else {
-          this.mercuryOverage = Math.abs(this.mercuryRemaining);
-          return this.mercuryOverage;
+      else if (this.mercuryRemaining < 0) {
+        this.mercuryOverage = Math.abs(this.mercuryRemaining);
+        return this.mercuryOverage;
         }
     }
     venusOver() {
-      if (this.venusRemaining > 0){
+      if (this.venusRemaining >= 0){
         return "--"
       }
-      else {
-          this.venusOverage = Math.abs(this.venusRemaining);
-          return this.venusOverage;
+      else if (this.venusRemaining < 0) {
+        this.venusOverage = Math.abs(this.venusRemaining);
+        return this.venusOverage;
         }
     }
     marsOver() {

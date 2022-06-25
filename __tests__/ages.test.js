@@ -2,8 +2,10 @@ import { PersonAge } from './../src/ages';
 
 describe('PersonAge', () => {
   let person;
+  let person2;
   beforeEach(() => {
     person = new PersonAge(35, 79);
+    person2 = new PersonAge (90, 79);
   });
   test('should create a Person object with earth age property', ()=> {
     expect(person.earthAge).toEqual(35);
@@ -27,21 +29,22 @@ describe('PersonAge', () => {
     expect(person.earthRemaining).toEqual(44);
   });
   test('should return the number of years over life expectancy on earth', () => {
-    let person2 = new PersonAge (90, 71);
     expect(person.earthOver()).toEqual('--');
-    expect(person2.earthOver()).toEqual(19);
+    expect(person2.earthOver()).toEqual(11);
   });
   test('should return a Person objects remaining years on Mercury', () => {
     expect(person.mercuryRemaining).toEqual(183);
   });
   test('should return the number of years over life expectancy on Mercury', () => {
     expect(person.mercuryOver()).toEqual('--');
+    expect(person2.mercuryOver()).toEqual(46);
   });
   test('should return a Person objects remaining years on Venus', () => {
     expect(person.venusRemaining).toEqual(71);
   });
   test('should return the number of years over life expectancy on Venus', () => {
     expect(person.venusOver()).toEqual('--');
+    expect(person2.venusOver()).toEqual(18);
   });
   test('should return a Person objects remaining years on Mars', () => {
     expect(person.marsRemaining).toEqual(23);
